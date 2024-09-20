@@ -19,7 +19,8 @@ router.get("/best-dressed/comments", (req, res) => {
 });
 
 router.get("/people/:name/lookup", (req, res) => {
-  res.json("Number 5");
+  // console.log(req.params.name);
+  res.json(`Number 5, the name is ${req.params.name}`);
 });
 
 module.exports = router;
